@@ -1,0 +1,39 @@
+{
+  "name": "bcs-map-project",
+  "version": "0.1.0",
+  "description": "an Interactive Community Events Map application that displays",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "jest --detectOpenHandles --forceExit",
+    "dev": "NODE_ENV=development rollup -c -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "leaflet": "^1.6.0",
+    "nodemon": "^2.0.4",
+    "sequelize": "^5.21.11",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.0",
+    "@rollup/plugin-json": "^4.0.1",
+    "@rollup/plugin-node-resolve": "^6.0.0",
+    "jest": "^26.0.1",
+    "node-fetch": "^2.6.0",
+    "punycode": "^2.1.1",
+    "rollup": "^2.11.2",
+    "rollup-plugin-copy": "^3.3.0",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.4.0",
+    "rollup-plugin-svelte": "^5.2.2",
+    "rollup-plugin-terser": "^5.1.2",
+    "svelte": "^3.23.0",
+    "svelte-mui": "^0.3.3-3"
+  }
+}

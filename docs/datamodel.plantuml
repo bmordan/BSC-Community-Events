@@ -1,0 +1,36 @@
+@startuml
+entity users {
+    id: INTEGER PRIMARY KEY
+    name: STRING
+    phone: STRING
+    location_id: INTEGER
+}
+
+entity events_users {
+    event_id: INTEGER
+    user_id: INTEGER
+}
+
+entity events {
+    id: INTEGER PRIMARY KEY
+    title: STRING
+    desc: STRING
+    datetime: STRING
+    spaces: INTEGER
+    user_id: INTEGER
+    location_id: INTEGER
+}
+
+entity locations {
+    id: INTEGER PRIMARY KEY
+    lat: FLOAT
+    lng: FLOAT
+    event_id: INTEGER
+}
+
+events::id--{locations::event_id
+users::id--{events::user_id
+users::location_id-->locations::id
+users::id--{events_users::user_id
+events::id--{events_users::event_id
+@enduml

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bundle.css" />
+        <link rel="stylesheet" href="leaflet.css" />
+        <style>
+            :root {
+                --teal: #90CDCB;
+                --green: #D0DCAE;
+                --brick: #CC908B;
+                --mauve: #D7C8Cb;
+                --shadow: #504547;
+            }
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: Roboto, Helvetica, sans-serif;
+                color: rgba(0,0,0,0.7);
+            }
+            body {
+                overflow: hidden;
+            }
+            .leaflet-popup-wrapper {
+                position: relative;
+            }
+            .leaflet-popup-content-wrapper, .leaflet-popup-tip {
+                background-color: var(--mauve) !important;
+                color: var(--shadow);
+            }
+            .leaflet-popup-content samp {
+                position: absolute;
+                bottom: -16px;
+                right: -8px;
+                background-color: var(--shadow);
+                color: var(--teal);
+                font-weight: 900;
+                font-size: 18px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                box-sizing: border-box;
+            }
+            .leaflet-popup-content samp::after {
+                content: 'SPACES';
+                margin-right: -42px;
+                margin-left: 12px;
+                font-size: 8px;
+                color: var(--shadow);
+            }
+            .leaflet-popup-content button {
+                border: 0px solid transparent;
+                padding: .5rem 1rem;
+                background-color: var(--primary, #1976d2);
+                color: var(--mauve);
+                border-radius: 3px;
+                box-shadow: 0 3px 5px -1px rgba(0,0,0,0.2);
+                font-weight: 600;
+            }
+            .leaflet-container a.leaflet-popup-close-button {
+                position: absolute;
+                top: -8px;
+                right: -8px;
+                color: var(--shadow);
+                font-weight: 900;
+                font-size: 18px;
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <main id="app"></main>
+        <script src="bundle.js"></script>
+    </body>
+</html>

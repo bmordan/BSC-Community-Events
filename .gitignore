@@ -1,0 +1,3 @@
+node_modules
+public/bundle*
+lib/data.db

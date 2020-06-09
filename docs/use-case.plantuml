@@ -1,0 +1,35 @@
+@startuml
+left to right direction
+
+actor "Event Organiser" as o
+actor "Browser" as b
+
+rectangle "Community Events Ltd" {
+    (Create an event) as create
+    (Book an event) as book
+    (View all events) as view
+    (View my events) as view_mine
+    (View how many members have booked an event) as count
+    (View how many members have booked my event) as my_count
+    (View most popular event) as sort
+    (View my most popular event) as my_sort
+    (View my booked events) as booked
+}
+
+actor "Community Member" as m
+
+o --> create
+o --> view_mine
+o --> my_count
+o --> my_sort
+o --> view
+o --> sort
+view <-- b
+count <-- b
+sort <-- b
+book <-- m
+booked <--m
+view <-- m
+count <-- m
+sort <-- m
+@enduml
