@@ -18,6 +18,22 @@ Below are user stories for the two main groups of users _organisers_ and _member
 
 Becoming a _member_ or _organiser_ means that we'll create a user account for them. They will at that point effectively join the community. Users are only a _member_ by virtue of having booked for an event. Users are only an _organiser_ by virtue of having created an event. So a _member_ can also be an _organiser_ if they have both booked an event and created one.
 
+Log in with either of the following phone and password combos:
+
+```
+name: "Hatter",
+phone: "111",
+password: "password"
+```
+
+or
+
+```
+name: "Mo Hammer",
+phone: "222",
+password: "password"
+```
+
 ### Browsers
 
 * As a _browser_ I want to see events near me on a map to see if I might be interested in attending an event
